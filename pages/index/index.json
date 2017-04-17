@@ -1,0 +1,8 @@
+{
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "哈希密码",
+    "navigationBarTextStyle":"#FFFFFF"
+  }
+}

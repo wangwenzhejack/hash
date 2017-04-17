@@ -1,0 +1,25 @@
+<view class="page">
+  <view>
+    <image  mode='aspectFit' src="1.png"></image>
+  </view>
+  <view class="section">
+    <view class="section-title">请输入密码原文：</view>
+    <input bindinput="getpassword" password="true"></input>
+  </view>
+  <view class="section">
+    <view class="section-title">请选择Hash算法：</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section-title">结果：</view>
+    <view class="jieguo"><text selectable="true">{{text}}</text>
+    </view>
+  </view>
+  <view class="btn">
+    <button type="primary" data-aaa="{{index}}" data-bbb="{{password}}" bindtap="changeHash">转换</button>
+  </view>
+</view>
